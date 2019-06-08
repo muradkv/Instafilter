@@ -47,6 +47,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="bic-Xz-Kp9"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5gi-Jy-Vcd"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-2h-6LU">
                                 <rect key="frame" x="16" y="616" width="120" height="30"/>
