@@ -77,7 +77,7 @@
                             <constraint firstItem="GCm-8K-KYd" firstAttribute="trailing" secondItem="l2c-Rp-qjY" secondAttribute="trailing" id="03Q-6m-WAl"/>
                             <constraint firstItem="ZBc-2h-6LU" firstAttribute="top" secondItem="GCm-8K-KYd" secondAttribute="bottom" constant="25" id="1Hc-Qb-x7p"/>
                             <constraint firstItem="Hov-P0-54g" firstAttribute="top" secondItem="sfI-ca-xrU" secondAttribute="bottom" constant="12" id="5eq-sr-Whl"/>
-                            <constraint firstItem="l2c-Rp-qjY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZBc-2h-6LU" secondAttribute="trailing" constant="163" id="LwS-sM-3Bp"/>
+                            <constraint firstItem="l2c-Rp-qjY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZBc-2h-6LU" secondAttribute="trailing" priority="750" constant="163" id="LwS-sM-3Bp"/>
                             <constraint firstItem="GCm-8K-KYd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QaQ-Cz-5hb"/>
                             <constraint firstItem="GCm-8K-KYd" firstAttribute="leading" secondItem="Hov-P0-54g" secondAttribute="trailing" constant="8" symbolic="YES" id="Qrj-jm-Nlf"/>
                             <constraint firstItem="ZBc-2h-6LU" firstAttribute="top" secondItem="Hov-P0-54g" secondAttribute="bottom" constant="9" id="RdU-Ud-cTa"/>
@@ -94,6 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0sw-A1-EDB"/>
                     <connections>
+                        <outlet property="changeFilterButton" destination="ZBc-2h-6LU" id="Hyq-eR-tFH"/>
                         <outlet property="imageView" destination="McI-z7-v0u" id="llh-66-iU0"/>
                         <outlet property="intensity" destination="GCm-8K-KYd" id="XBg-gC-AEV"/>
                     </connections>

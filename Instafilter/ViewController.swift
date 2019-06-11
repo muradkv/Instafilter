@@ -12,6 +12,7 @@ import CoreImage
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var intensity: UISlider!
+    @IBOutlet var changeFilterButton: UIButton!
     
     var currentImage: UIImage!
     var context: CIContext!
@@ -103,6 +104,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
         
         applyProcessing()
+        
+        changeFilterButton.setTitle("Change filter: \(actionTitle)", for: .normal)
     }
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
